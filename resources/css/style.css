@@ -1,0 +1,207 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  width: 100%;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 26rem;
+  padding-top: 1rem;
+}
+
+.navbar {
+  background: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  max-height: 1.75rem;
+}
+
+.menu {
+  display: none;
+}
+
+nav li {
+  padding: 1rem 2rem;
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+  header {
+    padding-top: 0;
+  }
+  .company-info h3 {
+
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .company-info h3 {
+    display: none;
+  }
+
+.hero-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 960px;
+  margin: auto;
+}
+
+.hero-content {
+  padding: 0.75rem 5rem;
+  background: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.hero-content h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .main {
+    width: 100%;
+  }
+  .hero-content {
+    margin-top: 7.8rem;
+
+    position: relative;
+  }
+  .hero-content h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+
+
+.supporting {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.supporting h3 {
+  text-transform: uppercase;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.feature-card img {
+  height: 35%;
+  width: auto;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+  margin: 3rem 5% 4rem 0;
+}
+.philosophy h3, .appointments h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  background: cadetblue;
+  width: 10rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: azure;
+  padding: 4rem 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #menu {
+    display: inline-block;
+  }
+  nav li {
+    display: none;
+  }
+  .hero-container {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    margin-right: 0;
+  }
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .supporting h3 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .supporting p {
+    margin: 0 5px;
+    font-size: 0.77rem;
+  }
+  .footer-content {
+    text-align: center;
+    display: block;
+  }
+  footer p {
+    display: none;
+  }
+}
