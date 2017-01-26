@@ -38,7 +38,7 @@ header {
   max-height: 1.75rem;
 }
 
-.menu {
+#menu {
   display: none;
 }
 
@@ -53,10 +53,28 @@ nav a {
   color: white;
 }
 
+.hero-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 960px;
+  margin: auto;
+}
+
+.hero-content {
+  background: white;
+  margin-top: 14rem;
+  margin-right: -2rem;
+
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  padding: 0.75rem 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 960px) {
-  body {
-    width: 100%;
-  }
   header {
     padding-top: 0;
   }
@@ -69,40 +87,14 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .company-info h3 {
-    display: none;
-  }
-
-.hero-container {
-  display: flex;
-  justify-content: flex-end;
-  max-width: 960px;
-  margin: auto;
-}
-
-.hero-content {
-  padding: 0.75rem 5rem;
-  background: white;
-  margin-top: 10rem;
-  margin-right: -2rem;
-}
-
-.hero-content h1 {
-  font-family: Helvetica;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 960px) {
-
   .main {
     width: 100%;
   }
+  header {
+    background-position: left;
+  }
   .hero-content {
-    margin-top: 7.8rem;
-
     position: relative;
   }
   .hero-content h1 {
@@ -111,6 +103,51 @@ nav a {
     margin-right: 2rem;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  nav li {
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+  #menu {
+    display: inline-block;
+  }
+  nav li {
+    display: none;
+  }
+
+  .company-info h3 {
+    display: none;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .hero-content {
+    padding: 0.75rem 1rem;
+    background: white;
+    margin-top: 21rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-right: 0;
+  }
+}
+
+
 
 
 
@@ -135,7 +172,7 @@ nav a {
 }
 
 .feature-card img {
-  height: 35%;
+  height: 60%;
   width: auto;
 }
 
@@ -164,19 +201,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  #menu {
-    display: inline-block;
-  }
-  nav li {
-    display: none;
-  }
-  .hero-container {
-    justify-content: flex-start;
-  }
 
-  .hero-content {
-    margin-right: 0;
-  }
   .supporting {
     flex-direction: column;
     align-items: center;
